@@ -2,7 +2,7 @@
 type TUser = {
     id: number;
     name: string;
-    adress: {
+    address: {
         city: string;
         zipCode: number;
     };
@@ -17,3 +17,5 @@ const user: TUser = {
         zipCode: 12345,
     },
 };
+
+export {}; 

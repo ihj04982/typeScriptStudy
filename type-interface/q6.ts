@@ -6,20 +6,22 @@ interface IBaseUser {
 
 // AdminUser 타입 작성
 type TAdminUser = IBaseUser & {
-    id: number;
-    name: string;
+    role: string,
 };
+
 // GuestUser 타입 작성
-// 여기에 작성
+type TGuestUser = IBaseUser & {
+    visitCount: number;
+};
 
 // 아래 객체를 작성하세요.
-const admin: AdminUser = {
+const admin: TAdminUser = {
     id: 1,
     name: "Alice",
     role: "Administrator",
 };
 
-const guest: GuestUser = {
+const guest: TGuestUser = {
     id: 2,
     name: "Bob",
     visitCount: 5,

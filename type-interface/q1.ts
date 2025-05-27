@@ -6,19 +6,21 @@ interface IUser {
 }
 
 // 타입 작성
-// type TUser = {
-//     id: number;
-//     name: string;
-//     email?: string;
-// };
+type TUser = {
+    id: number;
+    name: string;
+    email?: string;
+};
 
 const user: IUser = {
     id: 1,
     name: "Alice",
 };
 
-// const userWithEmail: TUser = {
-//     id: 2,
-//     name: "Bob",
-//     email: "bob@example.com",
-// };
+const userWithEmail: TUser = {
+    id: 2,
+    name: "Bob",
+    email: "bob@example.com",
+};
+
+export {}; 
