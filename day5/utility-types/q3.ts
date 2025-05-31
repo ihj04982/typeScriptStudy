@@ -9,7 +9,8 @@ type FilteredUser = Omit<User, "password">;
 
 // 함수 작성
 function filterSensitiveInfo(user: User): FilteredUser {
-    return { name: user.name, email: user.email, role: user.role };
+    const { password, ...filteredInfo } = user;
+    return filteredInfo;
 }
 
 // 테스트 코드
